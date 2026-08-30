@@ -889,7 +889,7 @@ export const categories = [
     name: 'Seasonal Gears',
     description: 'Practical seasonal protection and comfort for security personnel working throughout changing weather conditions.',
     icon: '🧥',
-    image: `${BASE}PRODUCT/Product4/1.jpeg`, // Image for Seasonal Gears category
+    image: `${BASE}PRODUCT/Product4/1.png`, // Image for Seasonal Gears category
     subcategories: ['Raincoats', 'Sweaters', 'Hoodies', 'EVA Shoes'],
   },
   {
