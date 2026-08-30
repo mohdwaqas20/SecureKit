@@ -125,7 +125,7 @@ export default function Home() {
           <div className={styles.aboutContent}>
             <div className={styles.aboutImage}>
               <img
-                src="/PRODUCT/Shoes/1.jpeg"
+                src={`${import.meta.env.BASE_URL}PRODUCT/Shoes/1.jpeg`}
                 alt="Security personnel in professional uniform"
               />
             </div>

@@ -1,3 +1,5 @@
+const BASE = import.meta.env.BASE_URL;
+
 export const products = [
   // UNIFORMS
   {
@@ -8,9 +10,9 @@ export const products = [
     description: 'Premium quality security guard uniform shirt designed for comfort and durability.',
     longDescription: 'Professional security guard uniform shirt crafted with premium fabric for all-day comfort. Features reinforced seams, easy-care material, and professional styling suitable for large-scale security deployments.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product1/1.png',
+    image: `${BASE}PRODUCT/Product1/1.png`,
     images: [
-      '/PRODUCT/Product1/2.png',
+      `${BASE}PRODUCT/Product1/2.png`,
     ],
     features: [
       'Premium quality fabric',
@@ -34,9 +36,9 @@ export const products = [
     description: 'Durable security guard uniform trousers designed for professional appearance and comfort.',
     longDescription: 'Premium security guard uniform trousers crafted for durability and professional appearance. Designed for comfort during long shifts with reinforced pockets and quality stitching suitable for large-scale deployments.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product2/1.png',
+    image: `${BASE}PRODUCT/Product2/1.png`,
     images: [
-      '/PRODUCT/Product2/2.png',
+      `${BASE}PRODUCT/Product2/2.png`,
     ],
     features: [
       'Heavy-duty fabric',
@@ -60,9 +62,9 @@ export const products = [
     description: 'Comfortable and durable security guard t-shirt for everyday wear.',
     longDescription: 'Quality security guard t-shirt designed for comfort and durability. Perfect for training or casual security operations with professional styling and easy care.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product3/1.png',
+    image: `${BASE}PRODUCT/Product3/1.png`,
     images: [
-      '/PRODUCT/Product3/2.jpeg',
+      `${BASE}PRODUCT/Product3/2.jpeg`,
     ],
     features: [
       'Breathable fabric',
@@ -89,9 +91,9 @@ export const products = [
     description: 'Durby Light Weight Safety Shoes with Steel Toe Protection',
     longDescription: 'Premium durby light weight safety shoes engineered for maximum comfort and protection. Features steel toe cap protection, hi-viz reflective strips, and synthetic leather upper.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/1.jpeg',
+    image: `${BASE}PRODUCT/Shoes/1.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -118,9 +120,9 @@ export const products = [
     description: 'Durby Light Weight Safety Shoes with Enhanced Protection',
     longDescription: 'Premium durby light weight safety shoes with enhanced protection features. Designed for demanding security environments.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/2.jpeg',
+    image: `${BASE}PRODUCT/Shoes/2.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -147,9 +149,9 @@ export const products = [
     description: 'Durby Light Weight Safety Shoes Professional Grade',
     longDescription: 'Professional grade durby light weight safety shoes built for comfort and protection in demanding work environments.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/3.jpeg',
+    image: `${BASE}PRODUCT/Shoes/3.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -176,9 +178,9 @@ export const products = [
     description: 'Low Ankle Light Weight Safety Shoes with Comfort Design',
     longDescription: 'Low ankle design provides superior comfort while maintaining protective safety features for extended wear.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/4.jpeg',
+    image: `${BASE}PRODUCT/Shoes/4.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -205,9 +207,9 @@ export const products = [
     description: 'Low Ankle Light Weight Safety Shoes Standard Series',
     longDescription: 'Standard series low ankle light weight safety shoes offering excellent protection and comfort balance.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/5.jpeg',
+    image: `${BASE}PRODUCT/Shoes/5.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -234,9 +236,9 @@ export const products = [
     description: 'Durby Light Weight Safety Shoes Comfort Line',
     longDescription: 'Comfort line durby light weight safety shoes engineered for maximum day-long comfort.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/6.jpeg',
+    image: `${BASE}PRODUCT/Shoes/6.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -261,9 +263,9 @@ export const products = [
     description: 'Durby Light Weight Safety Shoes with Mesh Upper',
     longDescription: 'Breathable mesh upper design provides superior ventilation while maintaining protection standards.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/7.jpeg',
+    image: `${BASE}PRODUCT/Shoes/7.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -290,9 +292,9 @@ export const products = [
     description: 'Durby Light Weight Safety Shoes Breathable Series',
     longDescription: 'Breathable series durby light weight safety shoes for hot weather operations.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/8.jpeg',
+    image: `${BASE}PRODUCT/Shoes/8.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -319,9 +321,9 @@ export const products = [
     description: 'Ankle Light Weight Safety Shoes Premium Edition',
     longDescription: 'Premium edition ankle light weight safety shoes with enhanced ankle support and protection.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/9.jpeg',
+    image: `${BASE}PRODUCT/Shoes/9.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -348,9 +350,9 @@ export const products = [
     description: 'Ranger Low Ankle Light Weight Safety Shoes Premium Leather',
     longDescription: 'Ranger series with genuine suede leather upper for premium comfort and durability.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/10.jpeg',
+    image: `${BASE}PRODUCT/Shoes/10.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -377,9 +379,9 @@ export const products = [
     description: 'Ankle Light Weight Safety Shoes Classic Design',
     longDescription: 'Classic design ankle light weight safety shoes with proven comfort and protection performance.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/11.jpeg',
+    image: `${BASE}PRODUCT/Shoes/11.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -406,9 +408,9 @@ export const products = [
     description: 'Ankle Light Weight Safety Shoes Enhanced Comfort',
     longDescription: 'Enhanced comfort ankle light weight safety shoes for maximum wearability during long shifts.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/12.jpeg',
+    image: `${BASE}PRODUCT/Shoes/12.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -435,9 +437,9 @@ export const products = [
     description: 'Runner-One Durby Light Weight Safety Shoes Premium Buffalo Leather',
     longDescription: 'Premium buffalo leather runner-one series durby light weight safety shoes for superior durability.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/13.jpeg',
+    image: `${BASE}PRODUCT/Shoes/13.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -464,9 +466,9 @@ export const products = [
     description: 'Safari Durby Light Weight Safety Shoes Premium Line',
     longDescription: 'Safari series premium line durby light weight safety shoes with genuine buffalo leather.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/14.jpeg',
+    image: `${BASE}PRODUCT/Shoes/14.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -493,9 +495,9 @@ export const products = [
     description: 'Atom Durby Light Weight Safety Shoes Buffalo Leather',
     longDescription: 'Atom series durby light weight safety shoes crafted with genuine buffalo print leather.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/15.jpeg',
+    image: `${BASE}PRODUCT/Shoes/15.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -522,9 +524,9 @@ export const products = [
     description: 'Hulk Ankle Light Weight Safety Shoes Premium Buffalo',
     longDescription: 'Hulk series ankle light weight safety shoes with premium genuine buffalo print leather.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/16.jpeg',
+    image: `${BASE}PRODUCT/Shoes/16.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -551,9 +553,9 @@ export const products = [
     description: 'Elevator High Ankle Light Weight Safety Shoes Buffalo Leather',
     longDescription: 'Elevator series high ankle light weight safety shoes with premium buffalo print leather for enhanced ankle support.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/17.jpeg',
+    image: `${BASE}PRODUCT/Shoes/17.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -580,9 +582,9 @@ export const products = [
     description: 'Hook Land Ankle Light Weight Safety Shoes Premium Buffalo',
     longDescription: 'Hook Land series ankle light weight safety shoes with genuine buffalo print leather construction.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/18.jpeg',
+    image: `${BASE}PRODUCT/Shoes/18.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -609,9 +611,9 @@ export const products = [
     description: 'Scout Durby Light Weight Safety Shoes Buffalo Leather',
     longDescription: 'Scout series durby light weight safety shoes crafted with genuine buffalo print leather for maximum durability.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Shoes/19.jpeg',
+    image: `${BASE}PRODUCT/Shoes/19.jpeg`,
     images: [
-      '/PRODUCT/Shoes/sizes.jpeg',
+      `${BASE}PRODUCT/Shoes/sizes.jpeg`,
     ],
     features: [
       'Synthetic Lining',
@@ -639,9 +641,9 @@ export const products = [
     description: 'Waterproof raincoat designed for security personnel in wet weather.',
     longDescription: 'Professional waterproof raincoat specifically designed for security personnel. Features durable material, visibility design, and practical functionality for all-weather security operations.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product4/1.png',
+    image: `${BASE}PRODUCT/Product4/1.png`,
     images: [ 
-      '/PRODUCT/Product4/2.png',
+      `${BASE}PRODUCT/Product4/2.png`,
     ],
     features: [
       'Waterproof material',
@@ -665,9 +667,9 @@ export const products = [
     description: 'Warm and professional sweater for cold weather security operations.',
     longDescription: 'Quality wool blend sweater designed for security personnel. Provides warmth and comfort during cold weather operations while maintaining professional appearance.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product5/1.png',
+    image: `${BASE}PRODUCT/Product5/1.png`,
     images: [
-      '/PRODUCT/Product5/2.png'
+      `${BASE}PRODUCT/Product5/2.png`
     ],
     features: [
       'Wool blend material',
@@ -691,9 +693,9 @@ export const products = [
     description: 'Professional hoodie for casual security operations in cool weather.',
     longDescription: 'Comfortable and durable hoodie designed for security personnel. Combines warmth with professional appearance, suitable for training and casual security duties.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product6/1.jpeg',
+    image: `${BASE}PRODUCT/Product6/1.jpeg`,
     images: [
-      '/PRODUCT/Product6/2.jpeg'
+      `${BASE}PRODUCT/Product6/2.jpeg`
     ],
     features: [
       'Comfortable fit',
@@ -717,9 +719,9 @@ export const products = [
     description: 'Lightweight EVA shoes for comfort during extended security operations.',
     longDescription: 'Professional EVA shoes designed for maximum comfort during long shifts. Lightweight construction with excellent support for security personnel.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product7/1.jpeg',
+    image: `${BASE}PRODUCT/Product7/1.jpeg`,
     images: [
-      '/PRODUCT/Product7/2.jpeg',
+      `${BASE}PRODUCT/Product7/2.jpeg`,
     ],
     features: [
       'Lightweight EVA',
@@ -745,9 +747,9 @@ export const products = [
     description: 'Durable leather security belt with metal buckle.',
     longDescription: 'Premium quality leather security belt with reinforced metal buckle. Perfect for holding equipment and maintaining professional appearance.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product8/1.png',
+    image: `${BASE}PRODUCT/Product8/1.png`,
     images: [
-      '/PRODUCT/Product8/2.png',
+      `${BASE}PRODUCT/Product8/2.png`,
     ],
     features: [
       'Genuine leather',
@@ -771,9 +773,9 @@ export const products = [
     description: 'Professional security guard cap for complete uniform.',
     longDescription: 'Quality security guard cap designed for professional appearance. Perfect complement to security uniforms with adjustable fit.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product9/1.png',
+    image: `${BASE}PRODUCT/Product9/1.png`,
     images: [
-      '/PRODUCT/Product9/2.png',
+      `${BASE}PRODUCT/Product9/2.png`,
     ],
     features: [
       'Professional design',
@@ -797,9 +799,9 @@ export const products = [
     description: 'Professional security guard tie for formal uniforms.',
     longDescription: 'Quality security guard tie designed for formal security operations. Made with professional material for durability and appearance.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product10/1.jpeg',
+    image: `${BASE}PRODUCT/Product10/1.jpeg`,
     images: [
-      '/PRODUCT/Product10/2.jpeg',
+      `${BASE}PRODUCT/Product10/2.jpeg`,
     ],
     features: [
       'Professional appearance',
@@ -823,7 +825,7 @@ export const products = [
     description: 'Durable lanyard for ID cards and access passes.',
     longDescription: 'Professional security ID lanyard designed for holding ID cards and access passes. Made with durable material for everyday use.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product11/1.jpeg',
+    image: `${BASE}PRODUCT/Product11/1.jpeg`,
     
     features: [
       'Durable polyester',
@@ -847,7 +849,7 @@ export const products = [
     description: 'Leather whistle holder for security equipment.',
     longDescription: 'Quality leather whistle holder designed to keep whistles secure and accessible for security personnel.',
     price: 'Contact for Quote',
-    image: '/PRODUCT/Product12/1.png',
+    image: `${BASE}PRODUCT/Product12/1.png`,
     
     features: [
       'Genuine leather',
@@ -871,7 +873,7 @@ export const categories = [
     name: 'Uniforms',
     description: 'Professional security uniforms designed for comfort, durability, consistent appearance, and large-scale deployment.',
     icon: '👕',
-    image: '/PRODUCT/1.png', // Image for Uniforms category
+    image: `${BASE}PRODUCT/1.png`, // Image for Uniforms category
     subcategories: ['Shirts', 'Pants', 'T-Shirts'],
   },
   {
@@ -879,7 +881,7 @@ export const categories = [
     name: 'Safety Shoes',
     description: 'Reliable safety footwear designed to provide comfort and dependable performance throughout demanding security duties.',
     icon: '👞',
-    image: '/PRODUCT/Shoes/17.jpeg', // Image for Safety Shoes category
+    image: `${BASE}PRODUCT/Shoes/17.jpeg`, // Image for Safety Shoes category
     subcategories: ['Leather Safety Shoes', 'Synthetic Leather Shoes', 'Sports Safety Shoes'],
   },
   {
@@ -887,7 +889,7 @@ export const categories = [
     name: 'Seasonal Gears',
     description: 'Practical seasonal protection and comfort for security personnel working throughout changing weather conditions.',
     icon: '🧥',
-    image: '/PRODUCT/Product4/1.jpeg', // Image for Seasonal Gears category
+    image: `${BASE}PRODUCT/Product4/1.jpeg`, // Image for Seasonal Gears category
     subcategories: ['Raincoats', 'Sweaters', 'Hoodies', 'EVA Shoes'],
   },
   {
@@ -895,7 +897,7 @@ export const categories = [
     name: 'Other Essential Gears',
     description: 'Essential accessories that complete a professional security uniform and day-to-day deployment.',
     icon: '🎒',
-    image: '/PRODUCT/4.jpeg', // Image for Essential Gears category
+    image: `${BASE}PRODUCT/4.jpeg`, // Image for Essential Gears category
     subcategories: ['Belts', 'Caps', 'Ties', 'Lanyards', 'Whistle Holders'],
   },
 ];

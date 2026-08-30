@@ -6,7 +6,7 @@
   align-items: center;
   background-image:
     linear-gradient(100deg, rgba(3, 13, 24, 0.97) 0%, rgba(4, 18, 32, 0.9) 32%, rgba(6, 24, 41, 0.55) 58%, rgba(6, 24, 41, 0.1) 82%),
-    url('/bgmain.png');
+    url('/SecureKit/bgmain.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -920,7 +920,7 @@
     min-height: 500px;
     background-image:
       linear-gradient(180deg, rgba(4, 16, 28, 0.88) 0%, rgba(4, 16, 28, 0.9) 100%),
-      url('/bgmain.png');
+      url('/SecureKit/bgmain.png');
   }
 
   .heroText {

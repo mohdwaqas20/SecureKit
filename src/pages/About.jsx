@@ -35,7 +35,7 @@ export default function About() {
             <div className={styles.storyImage}>
               <div className={styles.imagePlaceholder}>
                 <img
-                  src="/PRODUCT/Shoes/1.jpeg"
+                  src={`${import.meta.env.BASE_URL}PRODUCT/Shoes/1.jpeg`}
                   alt="SecureKit manufacturing facility"
                 />
               </div>
