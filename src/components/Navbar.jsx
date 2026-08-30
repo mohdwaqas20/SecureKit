@@ -42,7 +42,7 @@ export default function Navbar({ cartCount = 0, wishlistCount = 0 }) {
       <div className={styles.container}>
         {/* Logo */}
         <Link to="/" className={styles.logo}>
-          <img src="/logo.png" alt="SecureKit Enterprises" className={styles.logoImage} />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="SecureKit Enterprises" className={styles.logoImage} />
         </Link>
 
         {/* Desktop Navigation */}

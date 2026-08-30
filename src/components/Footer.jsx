@@ -12,7 +12,7 @@ export default function Footer() {
         <div className={styles.content}>
           <div className={styles.section}>
             <div className={styles.brand}>
-              <img src="/logo.png" alt="SecureKit Enterprises" className={styles.brandLogo} />
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="SecureKit Enterprises" className={styles.brandLogo} />
               <h3>SECUREKIT ENTERPRISES</h3>
               <p>Built exclusively for the security industry.</p>
             </div>
