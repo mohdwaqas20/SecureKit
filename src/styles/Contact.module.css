@@ -1,0 +1,661 @@
+/* Contact Page Styles - Professional & Beautiful Design */
+.contact {
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+/* ============== HERO SECTION ============== */
+.hero {
+  position: relative;
+  padding: 6rem 0;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0F3D61 0%, #082847 50%, #0a2a45 100%);
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heroEyebrow {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d4af37;
+  margin-bottom: var(--spacing-md);
+  padding: 0.5rem 1rem;
+  background: rgba(212, 175, 55, 0.15);
+  border-radius: 50px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-white);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.accent {
+  color: #d4af37;
+  position: relative;
+}
+
+.accent::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, transparent);
+  border-radius: 2px;
+}
+
+.heroSubtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ============== CONTENT SECTION ============== */
+.content {
+  padding: 3rem 0;
+  background-color: var(--color-white);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* ============== FORM SECTION ============== */
+.formWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formCard {
+  width: 100%;
+  background: var(--color-white);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(15, 61, 97, 0.08);
+  transition: all 0.4s ease;
+}
+
+.formCard:hover {
+  border-color: #0F3D61;
+  box-shadow: 0 12px 40px rgba(15, 61, 97, 0.12);
+}
+
+.formHeader {
+  margin-bottom: 1.8rem;
+}
+
+.formHeader h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark-text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.formHeader p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2937;
+  letter-spacing: -0.3px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.required {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.93rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  background-color: var(--color-white);
+  border-color: #0F3D61;
+  box-shadow: 0 0 0 3px rgba(15, 61, 97, 0.08);
+}
+
+.formGroup input:disabled,
+.formGroup select:disabled,
+.formGroup textarea:disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #9ca3af;
+}
+
+.formGroup input.inputError,
+.formGroup select.inputError,
+.formGroup textarea.inputError {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.02);
+}
+
+.formGroup input.inputError:focus,
+.formGroup select.inputError:focus,
+.formGroup textarea.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.errorMessage {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #ef4444;
+  font-weight: 500;
+  animation: slideInError 0.3s ease;
+}
+
+@keyframes slideInError {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formGroup select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F3D61' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 1.3em 1.3em;
+  padding-right: 2.3rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+
+.submitBtn {
+  margin-top: 0.5rem;
+  padding: 0.9rem 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 61, 97, 0.25);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.submitting {
+  pointer-events: none;
+}
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--color-white);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.successMessage {
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  background: #ecfdf5;
+  border: 1.5px solid #6ee7b7;
+  border-radius: 8px;
+  color: #065f46;
+  font-size: 0.9rem;
+  font-weight: 500;
+  animation: slideDown 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.errorAlert {
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  background: #fef2f2;
+  border: 1.5px solid #fca5a5;
+  border-radius: 8px;
+  color: #991b1b;
+  font-size: 0.9rem;
+  font-weight: 500;
+  animation: slideDown 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============== CONTACT METHODS SECTION ============== */
+.contactMethodsWrapper {
+  padding: 0;
+}
+
+.methodsHeader {
+  margin-bottom: 1.8rem;
+}
+
+.methodsHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark-text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.methodsHeader p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.methodsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+  margin-bottom: 1.8rem;
+}
+
+.methodCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  background: var(--color-white);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.methodCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(15, 61, 97, 0.12);
+}
+
+.methodCard.whatsapp:hover {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(34, 197, 94, 0.02) 100%);
+  border-color: #22c55e;
+}
+
+.methodCard.phone:hover {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.02) 100%);
+  border-color: #3b82f6;
+}
+
+.methodCard.email:hover {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(168, 85, 247, 0.02) 100%);
+  border-color: #a855f7;
+}
+
+.methodIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  color: #0F3D61;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.methodCard.whatsapp .methodIcon {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+}
+
+.methodCard.phone .methodIcon {
+  background: rgba(59, 130, 246, 0.12);
+  color: #3b82f6;
+}
+
+.methodCard.email .methodIcon {
+  background: rgba(168, 85, 247, 0.12);
+  color: #a855f7;
+}
+
+.methodCard:hover .methodIcon {
+  transform: scale(1.1);
+}
+
+.methodContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.methodContent h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-dark-text);
+  margin: 0 0 0.4rem 0;
+  letter-spacing: -0.3px;
+}
+
+.methodContent p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0;
+  word-break: break-word;
+}
+
+.methodLink {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0F3D61;
+  transition: all 0.3s ease;
+}
+
+.methodCard:hover .methodLink {
+  transform: translateX(4px);
+  opacity: 0.8;
+}
+
+/* ============== INFO BOX ============== */
+.infoBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.4rem;
+  backdrop-filter: blur(10px);
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.infoIcon {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.infoLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.infoValue {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-dark-text);
+  margin: 0.3rem 0 0 0;
+}
+
+/* ============== RESPONSIVE ============== */
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .formWrapper {
+    justify-content: center;
+  }
+
+  .formCard {
+    max-width: 100%;
+  }
+
+  .infoBox {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 3.5rem 0;
+    min-height: auto;
+  }
+
+  .content {
+    padding: 2.5rem 0;
+  }
+
+  .formCard {
+    padding: 1.5rem;
+  }
+
+  .formHeader h2 {
+    font-size: 1.3rem;
+  }
+
+  .methodsHeader h3 {
+    font-size: 1.3rem;
+  }
+
+  .methodCard {
+    padding: 1.2rem;
+    gap: 1.1rem;
+  }
+
+  .methodIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .methodContent h4 {
+    font-size: 1rem;
+  }
+
+  .methodsGrid {
+    gap: 1rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .infoBox {
+    padding: 1.2rem;
+  }
+
+  .submitBtn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.7rem;
+  }
+
+  .mainGrid {
+    gap: 1.8rem;
+  }
+
+  .formCard {
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .formHeader h2 {
+    font-size: 1.2rem;
+  }
+
+  .formGroup {
+    gap: 0.35rem;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    padding: 0.65rem 0.85rem;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .methodCard {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .methodIcon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .infoBox {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .infoIcon {
+    font-size: 1.4rem;
+  }
+
+  .submitBtn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

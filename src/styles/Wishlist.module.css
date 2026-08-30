@@ -1,0 +1,556 @@
+/* ============== HERO SECTION ============== */
+.hero {
+  position: relative;
+  padding: 5rem 2rem;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0F3D61 0%, #082847 50%, #0a2a45 100%);
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heroEyebrow {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d4af37;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background: rgba(212, 175, 55, 0.15);
+  border-radius: 50px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.8px;
+}
+
+.accent {
+  color: #d4af37;
+  position: relative;
+}
+
+.accent::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, transparent);
+  border-radius: 2px;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ============== WISHLIST CONTAINER ============== */
+.wishlistContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  min-height: 60vh;
+}
+
+/* ============== STATS SECTION ============== */
+.wishlistStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.statCard:hover {
+  border-color: #d4af37;
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+  transform: translateY(-4px);
+}
+
+.statValue {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #0F3D61;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.statLabel {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ============== EMPTY WISHLIST ============== */
+.emptyWishlist {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f3f4f6 100%);
+  border-radius: 12px;
+  border: 1.5px dashed #e5e7eb;
+}
+
+.emptyIcon {
+  color: rgba(15, 61, 97, 0.15);
+  margin-bottom: 2rem;
+  display: inline-flex;
+}
+
+.emptyWishlist h2 {
+  font-size: 2.2rem;
+  color: #0F3D61;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.emptyWishlist p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.exploreButton {
+  background: linear-gradient(135deg, #0F3D61 0%, #082847 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 20px rgba(15, 61, 97, 0.2);
+  letter-spacing: 0.3px;
+}
+
+.exploreButton:hover {
+  background: linear-gradient(135deg, #d4af37 0%, #e5c158 100%);
+  color: #0a2a45;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.3);
+}
+
+/* ============== WISHLIST GRID ============== */
+.wishlistGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.wishlistCard {
+  background: var(--color-white);
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(15, 61, 97, 0.06);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wishlistCard:hover {
+  border-color: #d4af37;
+  box-shadow: 0 15px 40px rgba(15, 61, 97, 0.12);
+  transform: translateY(-8px);
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.wishlistCard:hover .cardImage img {
+  transform: scale(1.08);
+}
+
+.removeWishlistBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border: 2px solid var(--color-white);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+  z-index: 2;
+}
+
+.removeWishlistBtn:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+}
+
+.cardContent {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardCategory {
+  font-size: 0.85rem;
+  color: #d4af37;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  color: #0F3D61;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  min-height: 40px;
+  flex: 1;
+}
+
+.cardSpecs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.spec {
+  font-size: 0.85rem;
+  background: rgba(15, 61, 97, 0.1);
+  color: #0F3D61;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid rgba(15, 61, 97, 0.2);
+}
+
+.spec strong {
+  font-weight: 700;
+  color: #0F3D61;
+}
+
+.specCustom {
+  font-size: 0.85rem;
+  background: rgba(76, 175, 80, 0.12);
+  color: #388e3c;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.cardActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.viewButton {
+  background: transparent;
+  color: #0F3D61;
+  border: 2px solid #0F3D61;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.2px;
+}
+
+.viewButton:hover {
+  background: #0F3D61;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(15, 61, 97, 0.2);
+}
+
+.addCartButton {
+  background: linear-gradient(135deg, #0F3D61 0%, #082847 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(15, 61, 97, 0.15);
+  letter-spacing: 0.2px;
+}
+
+.addCartButton:hover {
+  background: linear-gradient(135deg, #d4af37 0%, #e5c158 100%);
+  color: #0a2a45;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* ============== CONTINUE SECTION ============== */
+.continueSection {
+  text-align: center;
+  padding: 2rem 0 4rem;
+  border-top: 1.5px solid #e5e7eb;
+}
+
+.continueShopping {
+  background: linear-gradient(135deg, #0F3D61 0%, #082847 100%);
+  color: white;
+  border: none;
+  padding: 1.1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 25px rgba(15, 61, 97, 0.2);
+  letter-spacing: 0.3px;
+}
+
+.continueShopping:hover {
+  background: linear-gradient(135deg, #d4af37 0%, #e5c158 100%);
+  color: #0a2a45;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.3);
+}
+
+/* ============== RESPONSIVE ============== */
+@media (max-width: 1024px) {
+  .wishlistGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3.5rem 1.5rem;
+    min-height: 300px;
+  }
+
+  .wishlistContainer {
+    padding: 3rem 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .wishlistGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .cardImage {
+    height: 220px;
+  }
+
+  .cardContent {
+    padding: 1.5rem;
+  }
+
+  .cardActions {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .emptyWishlist {
+    padding: 4rem 1.5rem;
+  }
+
+  .emptyWishlist h2 {
+    font-size: 1.8rem;
+  }
+
+  .exploreButton {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .wishlistContainer {
+    padding: 2rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 1.6rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+  }
+
+  .wishlistStats {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .statValue {
+    font-size: 2.2rem;
+  }
+
+  .statLabel {
+    font-size: 0.8rem;
+  }
+
+  .wishlistGrid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .cardImage {
+    height: 200px;
+  }
+
+  .cardTitle {
+    font-size: 1.05rem;
+  }
+
+  .cardDescription {
+    font-size: 0.9rem;
+    min-height: 35px;
+  }
+
+  .cardActions {
+    gap: 0.6rem;
+  }
+
+  .viewButton,
+  .addCartButton {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .continueSection {
+    padding: 1.5rem 0 2.5rem;
+  }
+
+  .continueShopping {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+}
