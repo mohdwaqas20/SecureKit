@@ -124,9 +124,13 @@ export default function Home() {
         <div className="container">
           <div className={styles.aboutContent}>
             <div className={styles.aboutImage}>
-              <img
-                src={`${import.meta.env.BASE_URL}PRODUCT/Shoes/1.jpeg`}
-                alt="Security personnel in professional uniform"
+              <video
+                src={`${import.meta.env.BASE_URL}video.MP4`}
+                autoPlay
+                loop
+                muted
+                playsInline
+                aria-label="Security personnel in professional uniform"
               />
             </div>
             <div className={styles.aboutText}>

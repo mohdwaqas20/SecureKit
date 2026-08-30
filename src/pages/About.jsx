@@ -34,9 +34,13 @@ export default function About() {
           <div className={styles.storyGrid}>
             <div className={styles.storyImage}>
               <div className={styles.imagePlaceholder}>
-                <img
-                  src={`${import.meta.env.BASE_URL}PRODUCT/Shoes/1.jpeg`}
-                  alt="SecureKit manufacturing facility"
+                <video
+                  src={`${import.meta.env.BASE_URL}video.MP4`}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  aria-label="SecureKit manufacturing facility"
                 />
               </div>
             </div>

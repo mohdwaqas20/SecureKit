@@ -910,6 +910,19 @@
     height: 85vh;
   }
 
+  /* Move close button to the bottom on mobile so it's easy to reach with a thumb */
+  .closeZoom {
+    top: auto;
+    bottom: -50px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .closeZoom:hover {
+    transform: translateX(-50%) scale(1.2);
+  }
+
   .zoomNavArrow {
     width: 40px;
     height: 40px;
@@ -1207,7 +1220,7 @@
   }
 
   .closeZoom {
-    top: -40px;
+    bottom: -42px;
   }
 
   .zoomNavArrow {

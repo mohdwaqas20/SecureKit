@@ -138,10 +138,12 @@
   box-shadow: 0 24px 60px rgba(15, 61, 97, 0.16);
 }
 
-.imagePlaceholder img {
+.imagePlaceholder img,
+.imagePlaceholder video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .storyContent {

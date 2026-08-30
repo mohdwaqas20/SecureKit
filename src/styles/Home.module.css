@@ -182,6 +182,13 @@
   box-shadow: 0 20px 40px rgba(15, 61, 97, 0.15);
 }
 
+.aboutImage video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .aboutLabel {
   display: inline-block;
   color: var(--color-primary-blue);
